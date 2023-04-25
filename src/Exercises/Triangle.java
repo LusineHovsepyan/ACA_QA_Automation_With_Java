@@ -54,17 +54,16 @@ public class Triangle {
                 }
                 else System.out.println("Entered value should be greater than sum of the first and second sides");
             }
-            else System.out.println("Entered value should be greater than zero");
+            else System.out.println("Entered value for the second side should be greater than zero");
         }
-        else System.out.println("Entered value should be greater than zero");
+        else System.out.println("Entered value for the first side should be greater than zero");
 
         System.out.println("Perimeter of the triangle is: " + perimeter);
     }
 
-//
-//    public static void areaOfTriangle() {
-//        System.out.println("Area of the triangle is: " + (h * base / 2));
-//    }
+    public static void areaOfTriangle() {
+        System.out.println("Area of the triangle is: " + (h * base / 2));
+    }
 
 
 }

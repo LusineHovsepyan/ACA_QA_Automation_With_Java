@@ -16,18 +16,15 @@ public class Main {
         Triangle perimTriangle = new Triangle(Triangle.getA(), Triangle.getB(), Triangle.getC());
         perimTriangle.perimeterOfTriangle();
 
-//        System.out.print("Please enter the Height of the triangle: ");
-//        Triangle.setH(in.nextDouble());
-//        System.out.print("Please enter the Base of the triangle: ");
-//        Triangle.setBase(in.nextDouble());
-//
-//        Triangle areaTriangle = new Triangle(Triangle.getH(), Triangle.getBase());
-//        Triangle.areaOfTriangle();
-//
-//        System.out.print("Please enter the Height of the triangle: ");
-//        Triangle.setH(in.nextDouble());
+        System.out.print("Please enter the Height of the triangle: ");
+        Triangle.setH(in.nextDouble());
+        System.out.print("Please enter the Base of the triangle: ");
+        Triangle.setBase(in.nextDouble());
 
-/*
+        Triangle areaTriangle = new Triangle(Triangle.getH(), Triangle.getBase());
+        areaTriangle.areaOfTriangle();
+
+
         System.out.print("Please enter num1: ");
         ActionsWithNumbers.setNum1(in.nextDouble());
         System.out.print("Please enter num2: ");
@@ -51,6 +48,6 @@ public class Main {
 
         ActionsWithNumbers actionProduct = new ActionsWithNumbers(ActionsWithNumbers.getNum1(), ActionsWithNumbers.getNum2());
         actionProduct.productCalc();
-*/
+
     }
 }
