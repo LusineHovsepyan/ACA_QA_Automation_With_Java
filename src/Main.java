@@ -1,5 +1,5 @@
-import Exercises.ActionsWithNumbers;
-import Exercises.Triangle;
+import exercises.ActionsWithNumbers;
+import exercises.Triangle;
 import java.util.Scanner;
 
 public class Main {

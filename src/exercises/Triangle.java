@@ -1,4 +1,4 @@
-package Exercises;
+package exercises;
 
 /*
 Write a program to print the area and perimeter of a triangle by creating a class named 'Triangle'
