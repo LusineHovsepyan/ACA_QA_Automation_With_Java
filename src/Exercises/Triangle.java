@@ -20,13 +20,9 @@ public class Triangle {
         c = _c;
     }
 
-    public static double getA() {
-        return a;
-    }
+    public static double getA() { return a;  }
     public static void setA(double a) { Triangle.a = a;  }
-    public static double getB() {
-        return b;
-    }
+    public static double getB() { return b;  }
     public static void setB(double b) { Triangle.b = b; }
     public static double getC() { return c;  }
     public static void setC(double c) { Triangle.c = c;  }
