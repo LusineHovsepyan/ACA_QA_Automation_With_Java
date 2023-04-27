@@ -1,4 +1,4 @@
-package Exercises;
+package exercises;
 //import java.util.Scanner;
 /*
 Write a program to calculate the sum, difference and product of two numbers by creating a class
