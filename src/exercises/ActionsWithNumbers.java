@@ -20,15 +20,15 @@ public class ActionsWithNumbers {
     public static void setNum2(double num2) { ActionsWithNumbers.num2 = num2; }
 
     public static void sumCalc(){
-        System.out.println(num1 + num2);
+        System.out.println("SUM: " + (num1 + num2));
     }
 
     public static void diffCalc(){
-        System.out.println(num1 - num2);
+        System.out.println("DIFF: " + (num1 - num2));
     }
 
     public static void productCalc(){
-        System.out.println(num1 * num2);
+        System.out.println("PROD: " + (num1 * num2));
     }
 
 }
