@@ -1,9 +1,17 @@
 package employee;
 
+import enums.Seasons;
+
+import java.util.Arrays;
 import java.util.Scanner;
+
+import static enums.Numbers.ONE;
 
 public class Main {
     public static void main(String[] args) {
+        Seasons mySeason = Seasons.WINTER;
+       // System.out.println(mySeason.value);
+        System.out.println(Arrays.toString(Seasons.values()));
         int count = 0;
         Employee[] employees = new  Employee[3];
         Scanner in = new Scanner(System.in);
