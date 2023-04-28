@@ -10,28 +10,33 @@ import static enums.Numbers.ONE;
 public class Main {
     public static void main(String[] args) {
         Seasons mySeason = Seasons.WINTER;
-       // System.out.println(mySeason.value);
+        System.out.println(mySeason.value);
         System.out.println(Arrays.toString(Seasons.values()));
+
         int count = 0;
-        Employee[] employees = new  Employee[3];
+        Employee[] employees = new Employee[3];
         Scanner in = new Scanner(System.in);
         while (count < 3) {
-            Employee employee1 = new Employee();
+
+            Employee employee2 = new Employee();
             System.out.print("Please enter your name: ");
-            employee1.setName(in.nextLine());
+            employee2.setName(in.nextLine());
 
             System.out.print("Please enter your year Of Joining: ");
-            employee1.setYearOfJoining(in.nextInt());
+            employee2.setYearOfJoining(in.nextInt());
             in.nextLine();
+
             System.out.print("Please enter your salary: ");
-            employee1.setSalary(in.nextDouble());
+            employee2.setSalary(in.nextDouble());
             in.nextLine();
 
-            System.out.print("Please enter your address: ");
+            Employee.Address add = employee2.new Address();
+            System.out.print("Please enter your address accordingly street, building, postIndex: ");
+            add.setAddress(in.next(), in.next(), in.nextInt());
 
-            employee1.setAddress(in.nextLine(), in.nextLine(),in.nextInt());
-            employees[count] = employee1;
+            employees[count] = employee2;
             count++;
+            in.nextLine();
         }
 
         for (Employee employee: employees ) {

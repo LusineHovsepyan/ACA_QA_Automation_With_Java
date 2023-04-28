@@ -14,10 +14,10 @@ The output should be as follows:
 public class Employee {
     private static String company;
     private String name;
-    private Address address;
     private int yearOfJoining;
     private double salary;
-    public Employee(String name, int yearOfJoining, double salary, String address) {
+
+    Employee(String name, int yearOfJoining, double salary, Address address) {
         setName(name);
         setYearOfJoining(yearOfJoining);
         //  setAddress(address);
@@ -44,16 +44,6 @@ public class Employee {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address.getAddressInfo();
-    }
-
-    public void setAddress(String street, String  building, int postIndex) {
-        this.address.street = street;
-        this.address.building = building;
-        this.address.postIndex = postIndex;
-    }
-
     public int getYearOfJoining() {
         return yearOfJoining;
     }
@@ -67,22 +57,33 @@ public class Employee {
     }
 
     public void setSalary(double salary) {
-        if (salary < 1100){
+        if (salary < 1100) {
             salary += 10;
         }
         this.salary = salary;
     }
 
-    public String getEmployeeInfo(){
-        return getName()  + ", " + getYearOfJoining() + ", " + getSalary()+ "$, " +  getAddress();
+    public String getEmployeeInfo() {
+        return getName() + ", " + getYearOfJoining() + ", " + getSalary() + "$, " + getAddressInfo();
     }
 
-    private class Address {
+    Address address = new Address();
+
+    public String getAddressInfo(){
+        return address.getAddress();
+    }
+    public class Address {
         String street, building;
         int postIndex;
 
-        public String getAddressInfo() {
-            return "";
+        public void setAddress(String street, String building, int postIndex) {
+            address.street = street;
+            address.building = building;
+            address.postIndex = postIndex;
+        }
+
+        public String getAddress() {
+            return street + ", " + building + ", " + postIndex;
         }
     }
 }
